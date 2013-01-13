@@ -1,11 +1,11 @@
-temp.png: temp.gnu temp.csv refresh
-	gnuplot temp.gnu > temp.png
+temp.svg: temp.gnu temp.csv refresh
+	gnuplot temp.gnu > temp.svg
 
 refresh:
 	wget -N http://r2d2.webconverger.org/2012-12-27/temp.csv
 
-view:
-	sxiv temp.png
+view: temp.svg
+	chromium temp.svg
 
 clean:
-	rm -f temp.png
+	rm -f temp.svg
