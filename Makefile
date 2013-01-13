@@ -1,7 +1,7 @@
-temp.svg: temp.gnu temp.csv refresh
+temp.svg: temp.gnu temp.csv
 	gnuplot temp.gnu > temp.svg
 
-refresh:
+temp.csv:
 	wget -N http://r2d2.webconverger.org/2012-12-27/temp.csv
 
 view: temp.svg
