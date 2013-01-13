@@ -4,4 +4,4 @@ set title "X220 temperature"
 set xdata time
 set timefmt "%s"
 set format x "%d/%m"
-plot 'temp.csv' using 1:2:3 with lines linecolor 3
+plot 'temp.csv' using 1:($2/1000):3 with lines

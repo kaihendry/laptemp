@@ -8,4 +8,4 @@ view: temp.svg
 	chromium temp.svg
 
 clean:
-	rm -f temp.svg
+	rm -f temp.svg temp.csv
