@@ -26,3 +26,8 @@ Every 5 minutes.
 http://i.stack.imgur.com/zLJkL.png
 
 http://stackoverflow.com/questions/14314895/
+
+
+# Acknowledgements
+
+* http://stackoverflow.com/users/1331399/thor
