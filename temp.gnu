@@ -7,7 +7,6 @@ set key outside
 set timefmt "%s"
 set ytics 5
 set format x "%d/%m"
-plot "< awk '{if($3 == \"3.0.57-1-lts\") print}' temp.csv" u 1:2 t column(3) w p pt 2, \
-     "< awk '{if($3 == \"3.6.10-1-ARCH\") print}' temp.csv" u 1:2 t column(3) w p pt 2, \
-     "< awk '{if($3 == \"3.6.11-1-ARCH\") print}' temp.csv" u 1:2 t column(3) w p pt 2, \
-     "< awk '{if($3 == \"3.8.1-1-mainline-dirty\") print}' temp.csv" u 1:2 t column(3) w p pt 2
+set style data linespoints
+plot for [arch in '3.0.57-1-lts 3.6.10-1-ARCH 3.6.11-1-ARCH 3.8.1-1-mainline-dirty'] \
+  'temp.csv' using 1:((strcol(3) == arch) ? $2 : '?') title arch
