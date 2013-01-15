@@ -7,12 +7,11 @@
 set term svg size 1024,708
 set title "X220 temperature"
 set xdata time
-set key outside
+set key off
 set timefmt "%s"
 set ytics 5
 set format x "%d/%m"
-set samples 10
 #plot 'temp.csv' <options> title 'first value', '' using 1:(1/0) lc <color> title 'second value', '' using 1:(1/0) lc <color> title 'third value'
 rgb(r,g,b)=int(2**16*(2**8*r) + 2**8*(2**8*g) + (2**8*b))
 getcolor(string) = (string eq "3.0.57-1-lts" ? rgb(1,0,0) : string eq "3.6.10-1-ARCH" ? rgb(0.5,0,1) : string eq "3.6.11-1-ARCH" ? rgb(0,1,0.5) : rgb(0,0,0));
-plot 'temp.csv' using 1:2:(getcolor($3)) with linespoints lc variable
+plot 'temp.csv' using 1:2:(getcolor(stringcolumn(3))) with linespoints lc variable
