@@ -31,6 +31,21 @@ run `make`
 	44K     temp.png
 	232K    temp.svg
 
+# Selecting ranges
+
+Get the two epoch times
+
+	date -d "yesterday" +%s
+	date -d "2 days ago" +%s
+
+And filter the csv...
+
+# Temperatures are useful
+
+* Indicates if there is a kernel problem
+* Tells is there is a hardware issue (deployed in a place without any air circulation)
+* Indicates if there is a load issue
+
 # Acknowledgements
 
 * http://stackoverflow.com/questions/14314895/
