@@ -23,11 +23,14 @@ Every 5 minutes.
 
 # Plotting temp.csv
 
-http://i.stack.imgur.com/zLJkL.png
+run `make`
 
-http://stackoverflow.com/questions/14314895/
+<img width=640 height=480 src=http://s.natalian.org/2013-01-15/temp.png>
 
+	$ du -sh temp.{png,svg}
+	44K     temp.png
+	232K    temp.svg
 
 # Acknowledgements
 
-* http://stackoverflow.com/users/1331399/thor
+* http://stackoverflow.com/questions/14314895/
