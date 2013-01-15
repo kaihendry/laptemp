@@ -1,5 +1,5 @@
 temp.svg: temp.gnu temp.csv
-	gnuplot temp.gnu > temp.svg
+	gnuplot temp.gnu
 
 debug: debug.gnu debug.csv
 	gnuplot debug.gnu
