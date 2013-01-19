@@ -33,6 +33,11 @@ run `make`
 
 # Zooming
 
+<video controls width=640 height=360>
+<source src=http://r2d2.webconverger.org/2013-01-19/gnuplot-zoom.webm type=video/webm>
+<source src=http://r2d2.webconverger.org/2013-01-19/gnuplot-zoom.mp4 type=video/mp4>
+</video>
+
 	gnuplot -p temp.gnu
 
 And use the **right mouse button** to select regions.
