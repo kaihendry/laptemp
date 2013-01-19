@@ -25,7 +25,7 @@ Every 5 minutes.
 
 run `make`
 
-<img width=640 height=480 src=http://s.natalian.org/2013-01-15/temp.png>
+<img width=640 height=480 src=http://r2d2.webconverger.org/2012-12-27/temp.png>
 
 	$ du -sh temp.{png,svg}
 	44K     temp.png
