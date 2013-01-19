@@ -40,7 +40,7 @@ run `make`
 
 	gnuplot -p temp.gnu
 
-And use the **right mouse button** to select regions.
+And use the **right mouse button** to select regions, as the [GNUplot video demonstrates](http://r2d2.webconverger.org/2013-01-19/gnuplot-zoom.html).
 
 # Selecting ranges
 
