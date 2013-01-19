@@ -33,12 +33,13 @@ run `make`
 
 # Selecting ranges
 
-Get the two epoch times
+Between two days ago and yesterday:
 
-	date -d "yesterday" +%s
-	date -d "2 days ago" +%s
+	awk -v a="$(date -d '2 days ago' +%s)" -v b="$(date -d 'yesterday' +%s)" '{ if ($1 >= a && $1 <= b) print  }' temp.csv
 
-And filter the csv... TODO
+Last two days and now:
+
+	awk -v a="$(date -d '2 days ago' +%s)" -v b="$(date +%s)" '{ if ($1 >= a && $1 <= b) print  }' temp.csv
 
 # Temperatures indicates if there is a
 
