@@ -31,6 +31,12 @@ run `make`
 	44K     temp.png
 	232K    temp.svg
 
+# Zooming
+
+	gnuplot -p temp.gnu
+
+And use the **right mouse button** to select regions.
+
 # Selecting ranges
 
 Between two days ago and yesterday:
@@ -50,3 +56,4 @@ Last two days and now:
 # Acknowledgements
 
 * http://stackoverflow.com/questions/14314895/
+* jayne on #gnuplot Freenode IRC
