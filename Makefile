@@ -1,5 +1,5 @@
 temp.png: temp.gnu temp.csv
-	gnuplot temp.gnu
+	gnuplot -e 'set term pngcairo size 1024,768; set output "temp.png"' temp.gnu
 
 temp.csv:
 	# We are only using first 3 columns, 1:epoch 2:temp 3:kernel

@@ -1,5 +1,3 @@
-set term pngcairo size 1024,768
-set output "temp.png"
 set title "Laptop temperature"
 set xdata time
 set key outside
