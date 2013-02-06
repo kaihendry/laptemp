@@ -1,3 +1,10 @@
+
+Background: This kernel regression
+<https://bugzilla.kernel.org/show_bug.cgi?id=52411> sadly RUINED my Linux
+computing experience for several months. I had to use the stable kernel where
+this problem existed due to VirtualBox modules. With my Thinkpad X220 machine
+reguarly hitting 80C+ it became a nightmare to work with.
+
 # Creating temp.csv
 
 You need to save the SSH socket details from ssh-agent, like so in your [.xinitrc](https://github.com/kaihendry/Kai-s--HOME/blob/master/.xinitrc):
